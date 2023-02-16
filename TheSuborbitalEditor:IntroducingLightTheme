@@ -1,0 +1,29 @@
+Houston, we have liftoff.
+
+One week ago, we told you we would start revamping the editor. Our current editor does not blend visually into our customer’s applications.
+
+We want to provide our customers with a more customizable editor experience that feels like a seamless part of their applications. So how can we fix that as quickly as possible?
+
+We are excited to introduce the editor’s new light theme!
+
+Light Theme
+
+(Screenshot of light vs dark editor theme)
+
+Now the editor not only has the original dark theme, but also the option to use a light theme which can more closely match their application’s UI. Having the ability to switch the editor’s theme has been a highly requested feature from our customers and we are thrilled to be able to deliver that to them today.
+
+But this is not the end. This is only our first step towards delivering more complex theming capabilities in the very near future. This first additional theme provides our customers with a quick win, and allows us to continue to explore what a more dynamic UI customization can entail. Stay on the lookout for updates soon.
+
+Sneak Peak
+
+We are also working on paring down the UI to allow the editor more space to breathe. The testing panels and console are very useful for our customers, so we want to maintain that functionality with as much of a clean and sleek UI as possible. What could building that functionality into the editor component itself look like? Here is a sneak peak of what we are exploring.
+
+The large panels on the side and bottom have been removed and the functionality within those panels have been encapsulated into a navigation bar at the top. Doing so moves us closer to the goal of a more streamlined UI and better integration of the editor.
+
+However, emphasizing the code editor has its own challenges. For example, we are still exploring the interaction design for our testing and logging capabilities. These need to take input and produce output for the user. Once we investigate how to do this without sacrificing the focus on the editor, we will provide an update on our findings.
+
+We are thrilled to continue delivering improvements to our customer’s experience with the editor.
+
+Want to give it a try? Visit suborbital.dev and explore the capabilities of the Suborbital Extension Engine (SE2) or schedule a call with us to learn more!
+
+-Suborbital
