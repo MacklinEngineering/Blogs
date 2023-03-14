@@ -18,8 +18,10 @@ One week ago, we told you we would start revamping the editor, since our current
 We want to provide our customers with a more customizable editor experience that feels like a seamless part of their applications. So how can we fix that as quickly as possible?
 
 We are excited to introduce the editor’s new light theme!
+
 ![Light theme](https://user-images.githubusercontent.com/60084237/225015924-007bf88a-e9a1-4c9a-8bce-0731426c3c96.png)
-![White and Black Diagonal Theme Juxstaposition](https://user-images.githubusercontent.com/60084237/225015719-18e50658-1032-48ff-8d94-12e301de89a1.png)
+
+![White and Black Diagonal Theme Juxstaposition](https://user-images.githubusercontent.com/60084237/225016990-d10763d4-9df1-45f1-aec2-c9ba87c21d5d.png)
 
 The new Suborbital Light theme, which now has predominant colors, white, light grey and "seafood green", which a light yellow code highlighting color.
 
