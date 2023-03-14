@@ -1,10 +1,12 @@
-https://blog.suborbital.dev/the-suborbital-editor-revamp-or-rewrite
+FOUND AT: https://blog.suborbital.dev/the-suborbital-editor-revamp-or-rewrite
+
+![post header](https://user-images.githubusercontent.com/60084237/225018575-78a45152-22e3-4080-9531-58f0586af769.png)
 
 The Suborbital Editor: Revamp or Rewrite?
-Nyah Macklin's photo
+
 Nyah Macklin
 ·
-Feb 9, 2023
+Published Feb 9, 2023
 ·
 
 5 min read
@@ -20,10 +22,12 @@ Overview: What is the editor?
 
 The Suborbital Extension Engine (SE2) plugin editor is a web application that uses SE2's APIs to provide a low-friction environment for your end-users to write, build, test, and deploy plugins in a variety of programming languages like JavaScript, TypeScript, Rust, or Go. The editor can be easily embedded into any web application via an iframe or with a custom React component.
 
+![Suborbital Dark Theme](https://user-images.githubusercontent.com/60084237/225018276-dfd9de03-8720-4e5f-a2e8-061b5f743d6d.png)
+
 A navy-colored text editor with some sample code inside, and a "Build" button on the top left, with a "Build to deploy" button below it, a text area for entering test data, and a "build to run test" button below that. All those conponents lie in the left panel which sits 1/4 of the way from the left. A "Console" panel lies 1/3 of the way from the bottom, which has the words "Waiting for build" in the console section. There is also a "Test Results" section to the right of the console section.
 The Problem
 
-Screenshot of Suborbital's Editor integrated into a company (Streamdal)'s UI
+![Screenshot of Suborbital's Editor integrated into a company (Streamdal)'s UI](https://user-images.githubusercontent.com/60084237/225018926-5c16ed13-1ced-4c54-8d71-e026bb758f52.png)
 
 Our editor is the gateway to the Suborbital plugin experience. However, the first generation of the editor does not visually integrate as seamlessly into our customer’s applications as we would like. After seeing how the editor has been used over the past year, we decided to pursue a new iteration of the plugin development experience that is easier to integrate, more powerful, and yet still lightweight. Having a product that is easily themeable, has a more intuitive user interface, and has responsive sizing for smaller screens would make our customers’ experiences much more fluid.
 
@@ -36,11 +40,11 @@ VSCode
 
 For VSCode, we created an extension that sends a POST request to a placeholder API.
 
-Screenshot of Visual Studio Code: which shows 2 panels (one on top and one on the bottom of the screenshot). The one on top shows Typescript code that makes a POST request to a API, and the second (bottom) half of the screenshot shows the Extension running with the desired output.
+![Screenshot of Visual Studio Code: which shows 2 panels (one on top and one on the bottom of the screenshot). The one on top shows Typescript code that makes a POST request to a API, and the second (bottom) half of the screenshot shows the Extension running with the desired output](https://user-images.githubusercontent.com/60084237/225020666-8c12daeb-4898-47c0-82a2-e669afcf011e.png)
 
 We also tested whether we could have an output console and a testing panel where users could test inputs and the resulting outputs from the custom code written in the editor.
 
-A screenshot of Visual Studio Code showing a testing panel on the left 1/3 of the screenshot, and a Output logs section at the bottom of the screenshot.
+![A screenshot of Visual Studio Code showing a testing panel on the left 1/3 of the screenshot, and a Output logs section at the bottom of the screenshot](https://user-images.githubusercontent.com/60084237/225021288-eba397bb-ef59-4df2-9ae2-5a9f4a72aec3.png)
 
 The goal of this investigation was to see whether we could create feature parity with our existing editor using VSCode extensions. We were able to replicate most of the editor's current functionality which placed it as a clear front-runner early on in our experimentation process.
 
@@ -58,7 +62,7 @@ The last solution we reviewed was CodeMirror 6. The team took two approaches to 
 
 For the first approach, we built a prototype and analyzed how to implement a few of the core features for the current editor. This approach was beneficial to understand whether it was worth recreating all the UI around the base editor component.
 
-A screenshot that shows CodeMirror's code editor running in the browser with some demo code and also showcasing the autocomplete properties of CodeMirror.
+![A screenshot that shows CodeMirror's code editor running in the browser with some demo code and also showcasing the autocomplete properties of CodeMirror](https://user-images.githubusercontent.com/60084237/225021320-eff767f9-e2d4-4c2f-9692-f92b91c92cd6.png)
 
 For the second approach, instead of recreating everything, we upgraded CodeMirror on the current editor and gave it a fresh coat of paint.
 The Findings
