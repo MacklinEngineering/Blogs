@@ -3,7 +3,7 @@ Suborbital Launch Pad
 The Suborbital Editor: Introducing a Light Theme
 Nyah Macklin
 ·
-Feb 21, 2023
+Published Feb 21, 2023
 ·
 
 2 min read
