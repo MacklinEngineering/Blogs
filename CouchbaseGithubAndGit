@@ -1,0 +1,131 @@
+Cool Title???: #FreeCodeCamp : Intro to Git and Github 
+Boring Title: Introduction to Version Control: Git + Github
+
+If you’d like to watch this blog live, here is a video of Nyah Macklin & Jessica Rose walking through the process of installing Git and setting up a Github account. 
+
+In our last post, we learned about tools we can use to edit our code, like Visual Studio Code. Today, we will learn about an online tool we can use to store, share and track different versions of our code, Github. But before we can talk about Github, we have to talk about Git (and yes they are different).
+
+What is git?
+Git is a version control system. But what is that? The official Git docs states: “Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later.” If you play video games, git is like a memory card that saves your game (your code in this instance) at many different places in time. Git will save a snapshot of your code at a specific point in time and you can access that snapshot later.
+
+What is Github?
+Github is a web-based tool for storing/housing/sharing those snapshots/saved moments in time of your code. Many engineers take the snapshots using git and then “push” those snapshots “up” to Github, where other engineers can view and edit (with permission) those snapshots and can even add new snapshots themselves.
+
+Setting up Git & Github:
+
+Before we can start using these helpful tools, we have to get set up.
+
+Introducing The Command Prompt aka The Terminal:
+
+The terminal (or "Command Prompt" on Windows) is not this big scary place that you commonly see hackers in movies use. 
+
+
+
+It usually just seems scary because it is not as pretty as the rest of our computers.  Actually, we can think of the terminal like the backstage of your computer. 
+
+This is actually where we will use git! But first we have to install git. 
+
+### Part 1 - Installing Git
+
+**For Windows users:**
+
+1. Visit the [Git official website](https://git-scm.com/) and select the "Downloads" button in the center of your screen.
+2. Select "Windows" from the list of operating systems and select the latest version of Git for Windows.
+3. The downloaded file will pop up in the top right of your screen or the bottom left of your screen. Once it has finished downloading, double click to open the file. This will launch the Git installer.
+4. Follow the on-screen instructions. For now, the default options will do just fine. Click "Next" until the installation begins. 
+5. Congrats! 🎉 You've installed Git on your Windows machine. Skip down to ### Part 1.5 - Introduce Yourself to Git
+
+**For macOS users:**
+
+1. Open the terminal. If you don’t know what the icon for it looks like, open your Finder app and search for the Terminal app or use Spotlight to search for it (hold down command and the space bar at the same time to open Spotlight).
+2. Once you open the Terminal, Type `git --version` (without the quotations) and press enter. If Git isn't already installed, macOS will prompt you to install it. Many usually choose to download `homebrew` to then install git, and further instructions on that process can be found here. 
+Click the icon in the screenshot which will copy the text and then paste it to your terminal and press enter. 
+Side note: This might cause the Terminal to ask for your computer password to verify that you are authorizing this installation. Provide that password (you will learn more about `sudo` commands like this one later, but in short, sudo means `admin` level access to your computer, which is often needed to install `package managers` like homebrew (and npm for example).
+3. Some text will populate your screen and then end, similar to this, press enter whenever it designates:
+
+
+Homebrew is installed. Go back and finish installing git by typing into a new terminal window, `brew install git`. This is what should populate on your screen:
+
+
+4. You can verify that Git was successfully installed by typing into your terminal, `git --version` which should have a version number pop up. This means git was successfully installed! Now skip down to ### 1.5 - Introduce Yourself to Git
+
+
+**For Linux users:**
+
+1. Open the terminal.
+2. Depending on your distribution, type one of the following commands and press enter:
+
+   - For Debian/Ubuntu: `sudo apt-get install git`
+   - For Fedora: `sudo yum install git`
+
+3. Enter your password if prompted.
+4. Wait for the process to complete.
+
+### Part 1.5 - Introduce Yourself to Git
+
+Before you start using Git, you'll need to tell git who you are. Here's how:
+
+1. Open your terminal or Command Prompt if not already open.
+2. Type `git config --global user.name "Your Name"` and press enter. Replace "Your Name" with, well, your name!
+3. Next, type `git config --global user.email "youremail@example.com"` and press enter. Use your email address in place of "youremail@example.com".
+
+And... that's it! Git now knows who you are. Now let’s make a Github account.
+
+### Part 2 - Sign Up for Github
+
+Navigate in your browser to github.com/signup and follow the on screen instructions.
+Once complete, you will be brought to your Github Dashboard. 
+
+
+
+How to Create a Repository (Repo)?
+Now we can start creating a “snapshot” of code that I can share for other people to see on Github. 
+
+We’ll start by creating a repository, which is just another way of saying, create this home for my code to live online. We created a small home for your project that we built in our last post, and this home will be called “CopyAndPaste” (but you should call your repository (or home) whatever you want, preferably the name of your coding project. This repository will also be made public for everyone to see, and we will press “Create a new repository”.
+Now you will see a screen with alot of instructions on it. In the video, we followed one specific instruction, and that is to “Get started by creating a new file” (which is in the blue box, the third line of text down). (This method skips using git and the terminal and just copy and paste’s code into Github.)
+
+However, in this post we will use the terminal method to get our code into Github since we set Git up and since more practice will always improve our skills as a developer. Look down to the “... or create a new repository on the command line” section. 
+
+
+First we want this code to have a home on our computer somewhere, so if we don’t already have a folder with code in it that we want to push to Github, we will have to make one.  Let’s make a new folder called “CopyAndPaste” on our computer. In your terminal, type: `mkdir CopyAndPaste` or whatever name you want to use.
+
+Then type: `cd CopyAndPaste`. Cd stands for “change directory”. You can learn more about different terminal commands like cd here. 
+
+Now we are inside the CopyAndPaste folder. 
+
+
+Add Code to the Repo: 
+We can now execute the commands Github establishes, one after another, pressing enter after each line of text. 
+
+If you do not have Visual Studio Code installed, or you just want a quick way to connect Git and Github together, execute the following lines of code in your terminal as is. 
+
+`echo “# CopyAndPaste” >> README.me` 
+`git init`
+`git add README.md`
+`git commit -m "first commit"`
+`git branch -M main`
+`git remote add origin https://github.com/<Username>/<RepositoryName>.git` 
+(For this line, replace the Username and repository name with your respective values.)
+`git push -u origin main`
+
+If you do have Visual Studio Code installed and would like to practice getting the code from your code editor into Git and then into Github, skip this line of code: `echo “# CopyAndPaste” >> README.me` and instead jump to and execute “git init”. Next, go into VSCode and open the folder you just created in the terminal using the `mkdir` command. Then create a new file called “README.md” and input the same code “# <name of your Repository>”, then save the file. Continue with the rest of the commands in the terminal beginning with “git add README.md”. 
+
+Check Github, you should see a new file called “README.md” that has some text in it. This is your first file that has been pushed using Git into Github! 
+
+Congratulations! You're all set with Git & Github!
+
+Remember, every engineer was once new to these concepts. The first steps are always the hardest, but you've just conquered yet another! In our next post, we'll learn about how to build and share websites with the code we write.
+
+Keep going! We're all here to learn together.
+
+<3 Couchbase
+#LearningOnTheCouch
+
+Nyah Macklin is a Developer Evangelist at Couchbase who loves X, Y, and Z. They frequently build tools that showcase Couchbase’s x,y, and z. Ask any questions you have in the Couchbase Discord and chat with Nyah on Twitter.
+
+
+
+
+
+
+
